@@ -1,0 +1,122 @@
+.clear {
+  display: block;
+  clear: both;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "Roboto", "RobotoRegular", sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.half-container {
+  height: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+input.form-control,
+button.btn {
+  box-shadow: none;
+  border: none;
+  border-radius: 15px;
+  color: #33abff;
+}
+
+header {
+  position: relative;
+  height: 100%;
+  background-color: #0096ff;
+  color: #fff;
+  overflow: hidden;
+}
+
+header:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -200px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background-color: #ff1462;
+  border: 20px solid #000;
+  border-radius: 200px;
+}
+
+header .logo span {
+  font-family: "SFUIDisplay-Ultralight";
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 20px;
+  color: #77c7ff;
+}
+
+header .logo span b {
+  color: #fff;
+}
+
+header .login-form {
+  padding-top: 70px;
+  text-align: right;
+}
+
+header .login-form a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .login-form input {
+  text-align: right;
+}
+
+header .login-form form {
+  margin-top: 28px;
+}
+
+header .login-form form .form-group {
+  margin-bottom: 20px;
+}
+
+header .slogan h1 {
+  font-size: 60px;
+}
+
+header #scroll-down {
+  display: inline-block;
+  width: 60px !important;
+  height: 60px !important;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 5rem;
+  z-index: 999;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+header #scroll-down:hover {
+  background: #cee900;
+  border-color: transparent;
+}
+
+header #scroll-down i {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top: 18px;
+  left: 20px;
+  font-size: 24px;
+  position: absolute;
+}

@@ -1,0 +1,185 @@
+@import "bourbon"
+@import "vars.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+.btn
+	padding: 0 20px
+	height: 34px !important
+	line-height: 34px !important
+	border-radius: 17px
+	outline: none !important
+.btn-lg
+	height: 44px !important
+	line-height: 44px !important
+	padding: 0 40px
+	border-radius: 22px
+	text-transform: uppercase
+.btn-default, .btn-default:hover:hover, .btn-default:focus:hover, .btn-default.focus:hover, .btn-default:active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:hover:focus, .btn-default:focus:focus, .btn-default.focus:focus, .btn-default:active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:hover.focus, .btn-default:focus.focus, .btn-default.focus.focus, .btn-default:active.focus, .open > .dropdown-toggle.btn-default.focus
+	color: #119dff !important
+	background-color: #ffffff
+	border-color: transparent
+.btn-primary, .btn-primary:hover:hover, .btn-primary:focus:hover, .btn-primary.focus:hover, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:hover:focus, .btn-primary:focus:focus, .btn-primary.focus:focus, .btn-primary:active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:hover.focus, .btn-primary:focus.focus, .btn-primary.focus.focus, .btn-primary:active.focus, .open > .dropdown-toggle.btn-primary.focus
+	color: #ffffff !important
+	background-color: #0096ff
+	border-color: transparent
+
+
+
+//Custom Styles Here
+main
+	.section_title
+		margin: 40px 0
+		font-family: "Roboto"
+		font-weight: 700
+	section.competitions
+		padding-top: 150px
+		.competition_title
+			margin-bottom: 70px
+			&.mobile
+				text-align: center
+				margin-bottom: 35px
+				margin-top: 50px
+				h2
+					display: block
+			h2
+				display: inline-block
+			span.count
+				display: inline-block
+				width: 200px
+				height: 200px
+				font-size: 36px
+				color: #878787
+				border: 40px solid #0096ff
+				margin: 0 25px
+				border-radius: 50%
+				line-height: 125px
+				text-align: center
+				&.red
+					border-color: #ff1462
+				&.green
+					border-color: #cee900
+		.competition_description
+			p
+				color: #878787
+	section.authors
+		.author
+			height: 175px
+			margin-bottom: 30px
+			.avatar
+				position: absolute
+				display: inline-block
+				width: 175px
+				height: 175px
+				&:after
+					content: ''
+					display: inline-block
+					position: absolute
+					top: 0
+					left: 0
+					width: 175px
+					height: 175px
+					background-color: rgba(0, 150, 255, 0.5)
+					border-radius: 50%
+				img
+					width: 175px
+					height: 175px
+					border-radius: 50%
+			.information
+				position: absolute
+				top: 56px
+				left: 195px
+				display: inline-block
+				width: calc(100% - 205px)
+				color: #fff
+				font-size: 16px
+				span.name
+					background-color: #0096ff
+					border-radius: 15px
+					padding: 2px 20px
+					display: inline-block
+				span.profesion
+					background-color: #cee900
+					border-radius: 15px
+					padding: 2px 20px
+					display: inline-block
+					margin-top: 10px
+	section.blogs
+		color: #938e8e
+		.section_title
+			margin-top: 140px
+	section.others
+		margin-top: 200px
+		padding: 50px 0
+		background-color: #ff1462
+		color: #2e3b4e
+		.other
+			margin: 25px 0
+			background-color: #FFF
+			padding: 35px 30px
+			border-radius: 10px
+			font-family: "Roboto"
+			h2
+				margin-top: 0
+				font-weight: 700
+			p
+				margin: 20px 0 30px
+				font-weight: 500
+
+footer
+	padding: 125px 0 150px
+	background-color: #192431
+	color: #f6f7fa
+	font-family: "Roboto Light"
+	.footer-menu
+		margin-top: 70px
+		ul
+			list-style: none
+			padding: 0
+			a
+				color: #fff
+	h5
+		margin-bottom: 30px
+		font-family: "Roboto Medium"
+	.input-group
+		margin-bottom: 20px
+		input
+			border-radius: 30px
+			height: 60px
+			line-height: 60px
+			padding: 0 20px
+		.btn.btn-success
+			height: 100% !important
+			font-size: 20px
+			padding-right: 30px
+			border-radius: 30px
+			border-bottom-left-radius: 0
+			border-top-left-radius: 0
+			color: #fff
+			outline: none
+			background-color: #cee900
+	.search-description
+		color: #57697f
+//ALWAYS END
+@import "media"
